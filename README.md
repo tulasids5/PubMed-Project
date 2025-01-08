@@ -1,5 +1,5 @@
-PubMed Data Fetcher
-Overview
+## PubMed Data Fetcher
+# Overview
 This project allows you to search and fetch scientific papers from PubMed using the PubMed E-utilities API. The script is designed to search PubMed using custom queries, fetch metadata for matching papers, and classify authors as academic or non-academic based on their affiliation and email domain. The results are saved in a CSV format for further analysis.
 
 Features
