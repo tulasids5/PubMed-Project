@@ -25,6 +25,3 @@ packages=[
 
 [tool.poetry.scripts]
 get-papers-list = "pubmed.main:main"
-
-
-
