@@ -49,18 +49,18 @@ python pubmed/main.py "your search query"
 ```
 You can also specify options for debugging and saving the results to a file:
 
-  - **Debug mode**: Add the -d or --debug flag to print debug information.
-  - **Save results to a file**: Use the -f or --file option to specify a file name to save the results.
+  - **Debug mode**: Add the `-d` or `--debug` flag to print debug information.
+  - **Save results to a file**: Use the `-f` or `--file` option to specify a file name to save the results.
 ## Example usage:
 ```bash
 python pubmed/main.py "cancer research" -d -f results.csv
 ```
-This will fetch the results for "cancer research", enable debug mode, and save the results to results.csv.
+This will fetch the results for "cancer research", enable debug mode, and save the results to `results.csv`.
 
 ## Commands and Options
- - query (required): The search query string to search PubMed.
- - -d, --debug: Enable debug mode for detailed logs.
- - -f, --file: Specify a file name to save the results. If not provided, results are printed to the console.
+ - `query (required)`: The search query string to search PubMed.
+ - `-d, --debug`: Enable debug mode for detailed logs.
+ - `-f, --file`: Specify a file name to save the results. If not provided, results are printed to the console.
 ## File Structure
 ```Code
 PubMed-Project/
@@ -86,18 +86,22 @@ The output will include the following details for each paper:
  - **Corresponding Author Email**: Email of the corresponding author (if available).
 An example of the CSV output:
 
-12345678	A study on cancer therapies	2020	John Doe	Jane Smith	jdoe@company.com
-23456789	Advances in biotechnology	2019		Bob Johnson	bob.johnson@university.edu
+| ID        | Title                         | Year | Author 1     | Author 2       | Contact Email              |
+| --------- | ----------------------------- | ---- | ------------ | -------------- | -------------------------- |
+| 12345678  | A study on cancer therapies    | 2020 | John Doe     | Jane Smith     | jdoe@company.com           |
+| 23456789  | Advances in biotechnology      | 2019 | Bob Johnson  |                | bob.johnson@university.edu |
+
 ## Contribution Guidelines
-1.Fork the repository.
-2.Create a new feature branch (git checkout -b feature-branch).
-3.Commit your changes (git commit -m 'Add new feature').
-4.Push to the branch (git push origin feature-branch).
-5.Create a pull request.
+1. Fork the repository.
+2. Create a new feature branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a pull request.
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-##Acknowledgments
+## Acknowledgments
  - **NCBI PubMed API** for providing access to scientific data.
  - **Click** for creating command-line interfaces.
  - **Requests** for HTTP requests.
@@ -105,3 +109,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ```Code
 This `README.md` file includes instructions for installation, usage, file structure, and additional information about the project. Make sure to adjust any specific details as needed.
+```
