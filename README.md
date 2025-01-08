@@ -1,24 +1,24 @@
-## PubMed Data Fetcher
-# Overview
+# PubMed Data Fetcher
+## Overview
 This project allows you to search and fetch scientific papers from PubMed using the PubMed E-utilities API. The script is designed to search PubMed using custom queries, fetch metadata for matching papers, and classify authors as academic or non-academic based on their affiliation and email domain. The results are saved in a CSV format for further analysis.
 
-Features
+## Features
 Search PubMed: Execute search queries on PubMed to retrieve paper metadata.
 Author Classification: Classify authors into academic or non-academic based on their affiliation and email.
 Save Results: Save the results, including paper details and author classifications, to a CSV file.
 Debug Mode: Enable debug mode to get detailed logs for the operations.
-Technologies Used
+## Technologies Used
 Python 3.x: Programming language for the script.
 Requests: For HTTP requests to fetch data from PubMed API.
 Click: For creating command-line interfaces.
 CSV: For saving results into a CSV file.
 XML: For parsing XML data from PubMed’s fetch response.
-Setup Instructions
-Prerequisites
+## Setup Instructions
+### Prerequisites
 Python 3.6 or higher.
 pip (Python package installer).
 Internet connection to fetch data from the PubMed API.
-Installation
+### Installation
 Clone the repository:
 
 bash
